@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PhoneApp1.App">
+    <Position X="8.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAgCSAIAAAAhAAAAAAAAAAAAAAAEQAAAAAAAIIAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.BackgroundManager">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAABAAAAAAAAAAAIQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\BackgroundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.BooleanToVisibilityConverter" BaseTypeListCollapsed="true">
+    <Position X="14" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\BooleanToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhoneApp1.ColorProvider" Collapsed="true">
+    <Position X="23.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\ColorProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.RandomProvider">
+    <Position X="17.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\RandomProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.DelegateCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PhoneApp1.LocalizedStrings" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Base\LocalizedStrings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.ViewModelBase">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PhoneApp1.GameConfigurations">
+    <Position X="11" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAEBAACAAEAAAAQAACAAAAAEAAAAAAAAAAQA=</HashCode>
+      <FileName>Config\GameConfigurations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.ScreenConfigurations" Collapsed="true">
+    <Position X="20.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABQAAACAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\ScreenConfigurations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.EnemyUserControl" Collapsed="true">
+    <Position X="30.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAACAAAAAAAAAAAAAIAAAAACAAABAAAABAAAAAA=</HashCode>
+      <FileName>Enemy\EnemyUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Game">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iEIAggQgGKAQEYBAEBBOEIh/BuQfAgAgAAAAAUCgqDQ=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Enemy">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.GameObject">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAACAAIAEIAAAAAAAAAIAAgACAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Player">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.PlayerBullet">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\PlayerBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.GamePage">
+    <Position X="15.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAABAAAAAAAAAAAAAAAAEAEgEAAgAAAAAAIAAEAAAAA=</HashCode>
+      <FileName>GamePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.MainPage" Collapsed="true">
+    <Position X="20.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAGAAAAAAAAQAAgAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Auxuliary.BackgroundProvider" Collapsed="true">
+    <Position X="29" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\BackgroundProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.CanBeNullAttribute" Collapsed="true">
+    <Position X="18.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.NotNullAttribute" Collapsed="true">
+    <Position X="29" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.ItemNotNullAttribute" Collapsed="true">
+    <Position X="29" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.ItemCanBeNullAttribute" Collapsed="true">
+    <Position X="27.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.StringFormatMethodAttribute" Collapsed="true">
+    <Position X="22" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.ValueProviderAttribute" Collapsed="true">
+    <Position X="27.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.InvokerParameterNameAttribute" Collapsed="true">
+    <Position X="25.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.NotifyPropertyChangedInvocatorAttribute" Collapsed="true">
+    <Position X="27.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.ContractAnnotationAttribute" Collapsed="true">
+    <Position X="27.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.LocalizationRequiredAttribute" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.CannotApplyEqualityOperatorAttribute">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.BaseTypeRequiredAttribute" Collapsed="true">
+    <Position X="30.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.UsedImplicitlyAttribute" Collapsed="true">
+    <Position X="25.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.MeansImplicitUseAttribute" Collapsed="true">
+    <Position X="22" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.PublicAPIAttribute" Collapsed="true">
+    <Position X="30.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.InstantHandleAttribute" Collapsed="true">
+    <Position X="23.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.PureAttribute" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.PathReferenceAttribute">
+    <Position X="9.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcAreaMasterLocationFormatAttribute" Collapsed="true">
+    <Position X="30.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcAreaPartialViewLocationFormatAttribute" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcAreaViewLocationFormatAttribute" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcMasterLocationFormatAttribute" Collapsed="true">
+    <Position X="27.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcPartialViewLocationFormatAttribute" Collapsed="true">
+    <Position X="30.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcViewLocationFormatAttribute" Collapsed="true">
+    <Position X="20.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcActionAttribute" Collapsed="true">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcAreaAttribute">
+    <Position X="12" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcControllerAttribute" Collapsed="true">
+    <Position X="20.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcMasterAttribute" Collapsed="true">
+    <Position X="25.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcModelTypeAttribute" Collapsed="true">
+    <Position X="29" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcPartialViewAttribute">
+    <Position X="7.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcSupressViewErrorAttribute" Collapsed="true">
+    <Position X="16.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcDisplayTemplateAttribute" Collapsed="true">
+    <Position X="22" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcEditorTemplateAttribute" Collapsed="true">
+    <Position X="23.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcTemplateAttribute" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcViewAttribute">
+    <Position X="9.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMvcActionSelectorAttribute" Collapsed="true">
+    <Position X="29" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.HtmlElementAttributesAttribute" Collapsed="true">
+    <Position X="22" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.HtmlAttributeValueAttribute" Collapsed="true">
+    <Position X="20.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorSectionAttribute" Collapsed="true">
+    <Position X="27.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.CollectionAccessAttribute" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AssertionMethodAttribute" Collapsed="true">
+    <Position X="27.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AssertionConditionAttribute" Collapsed="true">
+    <Position X="25.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.TerminatesProgramAttribute" Collapsed="true">
+    <Position X="23.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.LinqTunnelAttribute" Collapsed="true">
+    <Position X="30.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.NoEnumerationAttribute" Collapsed="true">
+    <Position X="23.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RegexPatternAttribute" Collapsed="true">
+    <Position X="18.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.XamlItemsControlAttribute" Collapsed="true">
+    <Position X="30.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.XamlItemBindingOfItemsControlAttribute" Collapsed="true">
+    <Position X="29" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspChildControlTypeAttribute" Collapsed="true">
+    <Position X="20.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspDataFieldAttribute" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspDataFieldsAttribute" Collapsed="true">
+    <Position X="23.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspMethodPropertyAttribute" Collapsed="true">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspRequiredAttributeAttribute" Collapsed="true">
+    <Position X="22" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.AspTypePropertyAttribute" Collapsed="true">
+    <Position X="23.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorImportNamespaceAttribute" Collapsed="true">
+    <Position X="22" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorInjectionAttribute" Collapsed="true">
+    <Position X="23.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorHelperCommonAttribute" Collapsed="true">
+    <Position X="20.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorLayoutAttribute" Collapsed="true">
+    <Position X="25.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorWriteLiteralMethodAttribute" Collapsed="true">
+    <Position X="29" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorWriteMethodAttribute" Collapsed="true">
+    <Position X="30.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.RazorWriteMethodParameterAttribute" Collapsed="true">
+    <Position X="17" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Annotations.NoReorder" Collapsed="true">
+    <Position X="25.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Config.ConfigurationsProvider" Collapsed="true">
+    <Position X="25.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Config\ConfigurationsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Config.EnemyConfigurations">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAABMAAAACAAAAAAAKAAoAAAAAQAAAAgA=</HashCode>
+      <FileName>Config\EnemyConfigurations.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.GameObjects.BulletBase">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAABAAAAAAKAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\BulletBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.GameObjects.EnemyBullet">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\EnemyBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhoneApp1.Resources.AppResources" Collapsed="true">
+    <Position X="16.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAABEIAAAQAAAAAAAAAAAAIAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PhoneApp1.BackgroundTheme">
+    <Position X="13.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAgAAAAAAAAAAAAAAAAACAAAAAABAAAAAAA=</HashCode>
+      <FileName>Auxuliary\BackgroundTheme.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.MoveDestination" Collapsed="true">
+    <Position X="27.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+      <FileName>Auxuliary\MoveDestination.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.Annotations.ImplicitUseKindFlags" Collapsed="true">
+    <Position X="23.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAABAEAAAAAAIAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.Annotations.ImplicitUseTargetFlags" Collapsed="true">
+    <Position X="25.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAEAAAAAAQ=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.Annotations.CollectionAccessType" Collapsed="true">
+    <Position X="16.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.Annotations.AssertionConditionType" Collapsed="true">
+    <Position X="16.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAACAAAAAAAAgAAAIAAAAAAA=</HashCode>
+      <FileName>Base\Annotations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="PhoneApp1.Config.DifficultyLevel" Collapsed="true">
+    <Position X="22" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>Config\DifficultyLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

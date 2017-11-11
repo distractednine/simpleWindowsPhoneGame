@@ -1,0 +1,320 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp1.MainPage"
+    Name="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:contorls="clr-namespace:PhoneApp1"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"
+    Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <contorls:BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+        </Grid.Resources>
+        <Grid.Background>
+            <ImageBrush ImageSource="{Binding BackgroundManager.BackgroundImage}"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!--Main Menu-->
+        <Grid Grid.Row="0" 
+                Width="Auto"
+                Height="Auto"
+                Name="MenuGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" 
+                        HorizontalAlignment="Center"
+                        Margin="25">
+                <TextBlock Style="{StaticResource GameNameTextBlockStyle}"
+                           Text="The defenders"
+                           Name="HeaderText1">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard RepeatBehavior="Forever">
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="UIElement.FontSize"
+                                                                   Storyboard.TargetName="HeaderText1"
+                                                                   AutoReverse="True">
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="60"/>
+                                        <EasingDoubleKeyFrame KeyTime="0:0:7" Value="30"/>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="UIElement.Foreground"
+                                                                   Storyboard.TargetName="HeaderText1"
+                                                                   AutoReverse="True">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Red"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Orange"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Blue"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="ForestGreen"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:4" Value="Gold"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:5" Value="Wheat"/>
+                                    </ObjectAnimationUsingKeyFrames >
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                </TextBlock>
+                <TextBlock Style="{StaticResource GameNameTextBlockStyle}"
+                           Text="of Earth!!"
+                           Name="HeaderText2">
+                    <TextBlock.Triggers>
+                        <EventTrigger RoutedEvent="TextBlock.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard RepeatBehavior="Forever">
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="UIElement.FontSize"
+                                                                   Storyboard.TargetName="HeaderText2"
+                                                                   AutoReverse="True">
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="30"/>
+                                        <EasingDoubleKeyFrame KeyTime="0:0:7" Value="60"/>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="UIElement.Foreground"
+                                                                   Storyboard.TargetName="HeaderText2"
+                                                                   AutoReverse="True">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Red"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Orange"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:2" Value="Blue"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="ForestGreen"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:4" Value="Gold"/>
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:5" Value="Wheat"/>
+                                    </ObjectAnimationUsingKeyFrames >
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </TextBlock.Triggers>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1">
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Start Game"
+                        Tap="StartGame_Tap"/>
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Tap="ButtonDifficulty_Tap">
+                    <TextBlock Text="{Binding EnemyConfigurations.DifficutyLevelString}"/>
+                </Button>
+                <Button Style="{StaticResource MenuButtonStyle}"
+                        Content="Exit"
+                        Tap="ButtonExit_Tap"/>
+            </StackPanel>
+            <TextBlock Grid.Row="3"
+                       HorizontalAlignment="Center"
+                       Text="Svyatoslav Mandryk 2015"
+                       Name="AuthorTextBlock"
+                       Tap="AuthorTextBlock_Tap">
+                <TextBlock.RenderTransform>
+                    <RotateTransform x:Name="AuthorTextBlockRotateTransform"
+                                     Angle="0" CenterX="95" CenterY="25"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        
+        <!--Game Screen-->
+        <Canvas Grid.Row="1" 
+                Width="Auto"
+                Height="Auto"
+                Name="GameCanvas">
+
+            <!--Score message-->
+            <TextBlock Text="{Binding ScoreMessage}" 
+                       Canvas.Left="10"
+                       Foreground="Red"/>
+
+            <!--Main message-->
+            <TextBlock Name="MainMessage"
+                       Canvas.Left="200"
+                       Canvas.Top="320"
+                       FontSize="40"
+                       FontWeight="Bold"
+                       Foreground="Red"
+                       Canvas.ZIndex="3"/>
+
+            <!--Control buttons-->
+            <Button Content="Left" 
+                    Canvas.Left="-10"
+                    Style="{StaticResource ControlButtonStyle}"
+                    Command="{Binding MoveLeftCommand}"/>
+            <Button Content="Right"
+                    Canvas.Left="340" 
+                    Style="{StaticResource ControlButtonStyle}"
+                    Command="{Binding MoveRightCommand}"/>
+
+            <!--Player-->
+            <Button Name="Player"
+                    Canvas.Top="620" 
+                    Canvas.Left="{Binding Player.Left}"
+                    Command="{Binding FireCommand}"
+                    Visibility="{Binding Player.IsActive, Converter={StaticResource BoolToVisConverter}}"
+                    BorderThickness="0">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Height="150" 
+                                    Width="115">
+                            <StackPanel.Background>
+                                <ImageBrush ImageSource="Resources\Player.png"/>
+                            </StackPanel.Background>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!--Enemies-->
+            <contorls:EnemyUserControl 
+                Canvas.Top="{Binding Enemy1.Top}"
+                Canvas.Left="{Binding Enemy1.Left}"
+                EnemyColor="{Binding Enemy1.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy2.Top}" 
+                     Canvas.Left="{Binding Enemy2.Left}" 
+                    EnemyColor="{Binding Enemy2.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy3.Top}" 
+                     Canvas.Left="{Binding Enemy3.Left}" 
+					 EnemyColor="{Binding Enemy3.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy4.Top}" 
+                     Canvas.Left="{Binding Enemy4.Left}"
+					 EnemyColor="{Binding Enemy4.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy5.Top}" 
+                     Canvas.Left="{Binding Enemy5.Left}" 
+					 EnemyColor="{Binding Enemy5.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy6.Top}" 
+                     Canvas.Left="{Binding Enemy6.Left}" 
+					 EnemyColor="{Binding Enemy6.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy7.Top}" 
+                     Canvas.Left="{Binding Enemy7.Left}" 
+					 EnemyColor="{Binding Enemy7.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy8.Top}" 
+                     Canvas.Left="{Binding Enemy8.Left}"
+					 EnemyColor="{Binding Enemy8.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy9.Top}" 
+                     Canvas.Left="{Binding Enemy9.Left}" 
+					 EnemyColor="{Binding Enemy9.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy10.Top}" 
+                     Canvas.Left="{Binding Enemy10.Left}" 
+					 EnemyColor="{Binding Enemy10.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy11.Top}" 
+                     Canvas.Left="{Binding Enemy11.Left}" 
+					 EnemyColor="{Binding Enemy11.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy12.Top}" 
+                     Canvas.Left="{Binding Enemy12.Left}" 
+					 EnemyColor="{Binding Enemy12.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy13.Top}" 
+                     Canvas.Left="{Binding Enemy13.Left}" 
+					 EnemyColor="{Binding Enemy13.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy14.Top}" 
+                     Canvas.Left="{Binding Enemy14.Left}" 
+					 EnemyColor="{Binding Enemy14.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy15.Top}" 
+                     Canvas.Left="{Binding Enemy15.Left}" 
+					 EnemyColor="{Binding Enemy15.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy16.Top}" 
+                     Canvas.Left="{Binding Enemy16.Left}" 
+					 EnemyColor="{Binding Enemy16.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy17.Top}" 
+                     Canvas.Left="{Binding Enemy17.Left}" 
+					 EnemyColor="{Binding Enemy17.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy18.Top}" 
+                     Canvas.Left="{Binding Enemy18.Left}"
+					 EnemyColor="{Binding Enemy18.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy19.Top}" 
+                     Canvas.Left="{Binding Enemy19.Left}" 
+					 EnemyColor="{Binding Enemy19.Brush}"/>
+            <contorls:EnemyUserControl  
+                     Canvas.Top="{Binding Enemy20.Top}" 
+                     Canvas.Left="{Binding Enemy20.Left}" 
+					 EnemyColor="{Binding Enemy20.Brush}"/>
+
+            <!--Player bullets-->
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet1.Top}" 
+                     Canvas.Left="{Binding PlayerBullet1.Left}" 
+                     Fill="{Binding PlayerBullet1.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet2.Top}" 
+                     Canvas.Left="{Binding PlayerBullet2.Left}" 
+                     Fill="{Binding PlayerBullet2.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet3.Top}" 
+                     Canvas.Left="{Binding PlayerBullet3.Left}" 
+                     Fill="{Binding PlayerBullet3.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet4.Top}" 
+                     Canvas.Left="{Binding PlayerBullet4.Left}" 
+                     Fill="{Binding PlayerBullet4.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet5.Top}" 
+                     Canvas.Left="{Binding PlayerBullet5.Left}" 
+                     Fill="{Binding PlayerBullet5.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet6.Top}" 
+                     Canvas.Left="{Binding PlayerBullet6.Left}" 
+                     Fill="{Binding PlayerBullet6.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet7.Top}" 
+                     Canvas.Left="{Binding PlayerBullet7.Left}" 
+                     Fill="{Binding PlayerBullet7.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet8.Top}" 
+                     Canvas.Left="{Binding PlayerBullet8.Left}" 
+                     Fill="{Binding PlayerBullet8.Brush}"/>
+            <Ellipse Style="{StaticResource PlayerBulletStyle}"
+                     Canvas.Top="{Binding PlayerBullet9.Top}" 
+                     Canvas.Left="{Binding PlayerBullet9.Left}" 
+                     Fill="{Binding PlayerBullet9.Brush}"/>
+
+            <!--Enemy bullets-->
+            <Rectangle Style="{StaticResource EnemyBulletStyle}"
+                     Canvas.Top="{Binding EnemyBullet1.Top}" 
+                     Canvas.Left="{Binding EnemyBullet1.Left}" 
+                     Fill="{Binding EnemyBullet1.Brush}"/>
+            <Rectangle Style="{StaticResource EnemyBulletStyle}"
+                     Canvas.Top="{Binding EnemyBullet2.Top}" 
+                     Canvas.Left="{Binding EnemyBullet2.Left}" 
+                     Fill="{Binding EnemyBullet2.Brush}"/>
+            <Rectangle Style="{StaticResource EnemyBulletStyle}"
+                     Canvas.Top="{Binding EnemyBullet3.Top}" 
+                     Canvas.Left="{Binding EnemyBullet3.Left}" 
+                     Fill="{Binding EnemyBullet3.Brush}"/>
+            <Rectangle Style="{StaticResource EnemyBulletStyle}"
+                     Canvas.Top="{Binding EnemyBullet4.Top}" 
+                     Canvas.Left="{Binding EnemyBullet4.Left}" 
+                     Fill="{Binding EnemyBullet4.Brush}"/>
+            <Rectangle Style="{StaticResource EnemyBulletStyle}"
+                     Canvas.Top="{Binding EnemyBullet5.Top}" 
+                     Canvas.Left="{Binding EnemyBullet5.Left}" 
+                     Fill="{Binding EnemyBullet5.Brush}"/>
+        </Canvas>
+    </Grid>
+
+</phone:PhoneApplicationPage>
